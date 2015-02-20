@@ -1,7 +1,7 @@
 CC = clang
-SRC = em.c
-NAME = em
-CFLAGS = -Wall -Wpedantic -Wextra -std=c99 -Wno-shift-op-parentheses
+SRC = apem.c
+NAME = apem
+CFLAGS = -Wall -Wpedantic -Wextra -Wno-shift-op-parentheses -std=c99 
 
 all:	
 	${CC} -o ${NAME} ${CFLAGS} ${SRC} 
